@@ -71,6 +71,21 @@ imvol(imdes.results,nb=9,fc=0,p=0.05,size=4,alpha=1)
 ```
 ![res](https://github.com/cdesterke/immunemod/blob/main/imvol.png)
 
+### selection of gene expressions in a genset for nested analyses : function "imset"
+```r
+### volcanoplot on results of "imdes" analyses: function "imvol"
+```r
+data(data)
+data(im)
+names(im)
+df<-imset(im,data,geneset="Inhibitory")
+head(df[,1:5])
+```
+![res](https://github.com/cdesterke/immunemod/blob/main/imset.png)
+```
+![res](https://github.com/cdesterke/immunemod/blob/main/imvol.png)
+
+
 
 ## REFERENCES
 > Thorsson, Vésteinn, David L. Gibbs, Scott D. Brown, Denise Wolf, Dante S. Bortone, Tai-Hsien Ou Yang, Eduard Porta-Pardo, et al. 2018. « The Immune Landscape of Cancer ». Immunity 48 (4): 812-830.e14. https://doi.org/10.1016/j.immuni.2018.03.023.
