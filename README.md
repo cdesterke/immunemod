@@ -26,7 +26,7 @@ head(res[,1:6])
 ```
 ![res](https://github.com/cdesterke/immunemod/blob/main/imenrich.png)
 
-### heatmap of the immunemod enrichment: function "imheatmap"
+### heatmap of the immunemod enrichments: function "imheatmap"
 ```r
 library(immunemod)
 data(data)
@@ -37,7 +37,7 @@ imheatmap(res,phenotype,scale="none",fontsize=10)
 ```
 ![res](https://github.com/cdesterke/immunemod/blob/main/imheatmap.png)
 
-### boxplot of the immunemod enrichment: function "imboxplot"
+### boxplot of the immunemod enrichments: function "imboxplot"
 ```r
 library(immunemod)
 data(data)
@@ -47,6 +47,19 @@ res<-imenrich(data,im,method="zscore",kcdf = "Gaussian")
 imboxplot(res,phenotype,id="group",fontsize=14)
 ```
 ![res](https://github.com/cdesterke/immunemod/blob/main/imboxplot.png)
+
+
+### differential expression score of the immunemod enrichments: function "imdes"
+```r
+data(data)
+data(pheno)
+data(im)
+res<-imenrich(data,im,method="zscore",kcdf = "Gaussian")
+imdes.results<-imdes(res,phenotype$group,control="low")
+head(imdes.results)
+```
+![res](https://github.com/cdesterke/immunemod/blob/main/imdes.png)
+
 
 
 
