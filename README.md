@@ -26,6 +26,7 @@ head(res[,1:6])
 ```
 ![res](https://github.com/cdesterke/immunemod/blob/main/imenrich.png)
 
+
 ### heatmap of the immunemod enrichments: function "imheatmap"
 ```r
 library(immunemod)
@@ -73,16 +74,13 @@ imvol(imdes.results,nb=9,fc=0,p=0.05,size=4,alpha=1)
 
 ### selection of gene expressions in a genset for nested analyses : function "imset"
 ```r
-### volcanoplot on results of "imdes" analyses: function "imvol"
-```r
 data(data)
 data(im)
 names(im)
 df<-imset(im,data,geneset="Inhibitory")
 head(df[,1:5])
 ```
-![res](https://github.com/cdesterke/immunemod/blob/main/imset.png)
-```
+
 ![res](https://github.com/cdesterke/immunemod/blob/main/imvol.png)
 
 
