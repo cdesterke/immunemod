@@ -60,7 +60,16 @@ head(imdes.results)
 ```
 ![res](https://github.com/cdesterke/immunemod/blob/main/imdes.png)
 
-
+### volcanoplot on results of "imdes" analyses: function "imvol"
+```r
+data(data)
+data(phenotype)
+data(im)
+res<-imenrich(data,im,method="plage",kcdf = "Gaussian")
+imdes.results<-imdes(res,phenotype$group,control="low")
+imvol(imdes.results,nb=9,fc=0,p=0.05,size=4,alpha=1)
+```
+![res](https://github.com/cdesterke/immunemod/blob/main/imvol.png)
 
 
 ## REFERENCES
