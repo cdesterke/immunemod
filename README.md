@@ -81,7 +81,7 @@ df<-imset(im,data,geneset="Inhibitory")
 head(df[,1:5])
 ```
 
-![res](https://github.com/cdesterke/immunemod/blob/main/imvol.png)
+![res](https://github.com/cdesterke/immunemod/blob/main/imset.png)
 
 
 
