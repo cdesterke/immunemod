@@ -29,12 +29,12 @@ imdes<-function(res,group,control="control")
   # prepare design matrix
   levels <- relevel(as.factor(group),ref=control)
   design <- model.matrix(~levels)
-  rownames(design) = colnames(data)
+  rownames(design) = colnames(res)
 
   # perform limma analysis
   tmp <- lmFit(res,design=design)
   fit <- eBayes(tmp)
-  res = topTable(fit,number = nrow(data),coef=2)
-  res
+  results = topTable(fit,number = nrow(res),coef=2)
+  results
 }
 
