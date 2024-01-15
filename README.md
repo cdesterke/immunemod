@@ -85,7 +85,7 @@ head(df[,1:5])
 
 ## immunemod package used in :
 
-> Christophe Desterke, Yao Xiang, Rima Elhage, Clémence Duruel, Yunhua Chang, Ahmed Hamaï 2023. "Ferroptosis Inducers Upregulate PD-L1 in Recurrent Triple-Negative Breast Cancer".Cancers (Basel). 2023 Dec 28;16(1):155. doi: 10.3390/cancers16010155.
+> Christophe Desterke, Yao Xiang, Rima Elhage, Clémence Duruel, Yunhua Chang, Ahmed Hamaï 2023. "Ferroptosis Inducers Upregulate PD-L1 in Recurrent Triple-Negative Breast Cancer".Cancers (Basel). 2023 Dec 28;16(1):155. https://doi.org/10.3390/cancers16010155.
 
 ## REFERENCES
 > Thorsson, Vésteinn, David L. Gibbs, Scott D. Brown, Denise Wolf, Dante S. Bortone, Tai-Hsien Ou Yang, Eduard Porta-Pardo, et al. 2018. « The Immune Landscape of Cancer ». Immunity 48 (4): 812-830.e14. https://doi.org/10.1016/j.immuni.2018.03.023.
