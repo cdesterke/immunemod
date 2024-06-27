@@ -1,6 +1,8 @@
 # immunemod
 ## immunemod: R-package which allows to compute immune score based on expression of molecules grouped in nine distinct classes of immune modulation functions
 
+### compatible Bioconductor <3.18 and matrixStats <1.2.0
+
 
 
 
